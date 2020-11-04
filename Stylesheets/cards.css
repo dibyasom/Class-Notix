@@ -1,7 +1,3 @@
-/*
-    ACM WebMentorship Drive, Task-1. Dt:/29-10-20/
-    ~Dibyasom Puhan.
-*/
 
 *{
     box-sizing: border-box;
@@ -33,71 +29,135 @@ body{
         border: 0.1em solid rgb(251, 5, 141);
         border-radius: 5px;
     }
+
+    div.icebreaker {
+        overflow-x: auto;
+        position: relative;
+        top: 2em;
+        max-width: 90%;
+        letter-spacing: 0.1em;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 10px auto;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 2em;
+        box-sizing: border-box;
+    }
+
+    #profile img {
+        max-height: 5em;
+        max-width: auto;
+        border-radius: 40%;
+        box-sizing: border-box;
+    }
+
+    table, th, td {
+        max-width: 10%;
+        margin: auto;
+        font-family: 'Galada';
+        font-size: 1em;
+        color: #FFDF00;
+        text-align: left;
+        padding: 0.2em 1em;
+    }
+
+    ul {
+        margin: auto;
+        font-family: 'Galada';
+        font-size: 1em;
+        color: #FFDF00;
+        text-align: left;
+        padding: 0.2em 1em;
+    }
 }
 
 @media only screen and (min-width: 1081px) { /*Desktop Display*/
     html {
         height: 100%;
         width: auto;
-        background: url("../Resources/bg.gif") no-repeat center center fixed;
+        background: url("../Resources/bg-desktop1.jpg") no-repeat center center fixed;
         box-sizing: border-box;
     }
 
     .connect {
         position: relative;
-        left: 5em;
+        left: 0em;
         margin: auto;
         padding: 0.5em;
         text-align: center;
         letter-spacing: 1em;
     }
 
+    #profile img {
+        max-height: 10em;
+        max-width: auto;
+        border-radius: 40%;
+        box-sizing: border-box;
+    }
+
     hr.separator {
         border: 0.1em solid rgb(251, 5, 141);
         border-radius: 5px;
     }
-}
 
-#profile img {
-    margin: 2px 2px;
-    border: 0.1em inset grey;
-    box-shadow: 0.3em 0.3em 0.3em rgb(250, 118, 42);
-    padding: 0em;
-    float: left;
-    height: 15em;
-    width: auto;
-    border-radius: 40%;
-    box-sizing: border-box;
+    div.icebreaker {
+        overflow-x: auto;
+        position: relative;
+        top: 2em;
+        max-width: 70%;
+        letter-spacing: 0.2em;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 10px auto;
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 2em;
+        box-sizing: border-box;
+    }
+
+    table, th, td {
+        border: 2px solid gray;
+        max-width: 80%;
+        margin: auto;
+        font-family: 'Galada';
+        font-size: 1em;
+        color: #be00fe;
+        text-align: left;
+        padding: 0.2em 1em;
+    }
+
+    ul {
+        margin: auto;
+        font-family: 'Galada';
+        font-size: 1em;
+        color: #be00fe;
+        text-align: left;
+        padding: 0.2em 1em;
+    }
 }
 
 h1 {
     font-family: 'Eater';
     font-size: 2.5em;
     font-style: italic;
-    color: #030c6b;
-    text-shadow: 7px 7px 2px #f75234;
+    color: royalblue;
+    text-shadow: 3px 3px 2px rgb(220, 220, 220);
 }
 
 h2 {
     font-family: 'Galada';
     font-size: 1.5em;
     font-style: italic;
-    text-shadow: 1px 1px rgba(190, 0, 254, 0.7);
+    color: #f75234;
+    text-shadow: 1px 1px white;
 }
 
 h3 {
     font-family: 'Galada';
     font-size: 1.25em;
     text-shadow: 1px 1px 0px #f75234;
-}
-
-p {
-    margin: auto;
-    font-family: 'Galada';
-    font-size: 1em;
-    text-align: left;
-    color: black;
-    padding: 0.2em 1em;
+    color: rgb(255, 255, 150)
 }
 
 #hello img {
@@ -106,64 +166,15 @@ p {
     left: 0.5em;
 }
 
-div.icebreaker {
-    position: relative;
-    top: 2em;
-    max-width: 70%;
-    min-height: 20em;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin: 10px auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 2em;
-    box-sizing: border-box;
-}
-
-div.card1 {
-    position: relative;
-    top: 2em;
-    max-width: 70%;
-
-    text-align: center;
-    background-color: rgba(255, 255, 150, 0.6);
-    margin: 10px auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 2em;
-    box-sizing: border-box;
-}
-
-div.card2 {
-    position: relative;
-    top: 2em;
-    max-width: 70%;
-   
-    text-align: center;
-    background-color: rgba(255, 255, 150, 0.6);
-    margin: 10px auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 2em;
-    box-sizing: border-box;
-}
-
-div.card {
-    position: relative;
-    top: 30px;
-    text-align: center;
-    color: white;
-    margin: auto 30px;
-    padding: 25px;
-    background-image: url("CSS-Resources/bg1.jpg");
-    box-shadow: 0px 0px 30px rgba(190, 0, 254, 0.7);
-    border-radius: 10px;
+.fa-link{
+    font-size: 2em;
+    color: tomato;
 }
 
 .fa-linkedin {
     color: royalblue;
     font-size: 2em;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-github-alt {
@@ -175,7 +186,7 @@ div.card {
 .fa-instagram {
     font-size: 2em;
     color: blueviolet;
-    text-shadow: 2px 2px 2px rgb(252, 153, 45);
+    text-shadow: 2px 2px 2px rgb(251, 5, 141);
 }
 
 .fa-instagram:hover {
@@ -192,3 +203,18 @@ div.card {
     font-size: 1.5em;
     text-shadow: 3px 3px 3px red;
 }
+
+.fa-link:hover {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px yellow;
+}
+
+tr:hover {
+    background-color: black;
+}
+
+ul:hover:hover {
+    background-color: black;
+}
+
+
