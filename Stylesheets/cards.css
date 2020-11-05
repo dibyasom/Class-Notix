@@ -46,18 +46,30 @@ body{
     }
 
     #profile img {
-        max-height: 5em;
+        max-height: 7em;
         max-width: auto;
         border-radius: 40%;
         box-sizing: border-box;
     }
 
-    table, th, td {
+    table, td {
+        border: 2px solid gray;
+        max-width: 10%;
+        margin: auto;
+        padding: 1em 1em;
+        font-family: 'Galada';
+        font-size: 1em;
+        color: rgb(220, 220, 220);
+        text-align: left;
+        padding: 0.2em 1em;
+    }
+
+    th {
         max-width: 10%;
         margin: auto;
         font-family: 'Galada';
         font-size: 1em;
-        color: #FFDF00;
+        color: #f4c430;
         text-align: left;
         padding: 0.2em 1em;
     }
@@ -65,8 +77,8 @@ body{
     ul {
         margin: auto;
         font-family: 'Galada';
-        font-size: 2em;
-        color: #FFDF00;
+        font-size: 1em;
+        color: #f4c430;
         text-align: left;
         padding: 0.2em 1em;
     }
@@ -103,6 +115,7 @@ body{
 
     div.icebreaker {
         overflow-x: auto;
+        overflow-y: auto;
         position: relative;
         top: 2em;
         max-width: 70%;
@@ -116,13 +129,25 @@ body{
         box-sizing: border-box;
     }
 
-    table, th, td {
+    table, td {
+        margin: auto;
+        padding: 1em 1em;
+        border: 2px solid gray;
+        max-width: 80%;
+        font-family: 'Galada';
+        font-size: 1em;
+        color: white;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    th {
         border: 2px solid gray;
         max-width: 80%;
         margin: auto;
         font-family: 'Galada';
         font-size: 1em;
-        color: #be00fe;
+        color: #f4c430;
         text-align: left;
         padding: 0.2em 1em;
     }
@@ -131,7 +156,7 @@ body{
         margin: auto;
         font-family: 'Galada';
         font-size: 1em;
-        color: #be00fe;
+        color: #f4c430;
         text-align: left;
         padding: 0.2em 1em;
     }
@@ -141,32 +166,49 @@ h1 {
     font-family: 'Eater';
     font-size: 2.5em;
     font-style: italic;
-    color: royalblue;
+    color: #eb6123;
     text-shadow: 3px 3px 2px rgb(220, 220, 220);
 }
 
 h2 {
     font-family: 'Galada';
-    font-size: 1.5em;
+    font-size: 2em;
+    letter-spacing: 0.1em;
     font-style: italic;
     color: #f75234;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px black;
 }
 
 h3 {
     font-family: 'Galada';
     font-size: 1.25em;
-    text-shadow: 1px 1px 0px #f75234;
-    color: rgb(255, 255, 150)
+    text-shadow: 1px 1px 0px black;
+    color: blueviolet;
 }
 
+#player {
+    width: 40%;
+}
+
+#play {
+    margin: auto;
+    position: relative;
+    top: -1em;
+
+    font-family: 'Galada';
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    
+    color: #f75234;
+    text-shadow: 1px 1px black;
+}
 #hello img {
     position: relative;
     top: 0.4em;
     left: 0.5em;
 }
 
-.fa-link{
+.fa-paperclip{
     font-size: 2em;
     color: tomato;
 }
@@ -204,9 +246,9 @@ h3 {
     text-shadow: 3px 3px 3px red;
 }
 
-.fa-link:hover {
+.fa-paperclip:hover {
     font-size: 1.5em;
-    text-shadow: 3px 3px 3px yellow;
+    text-shadow: 5px 5px 0px red;
 }
 
 tr:hover {
@@ -217,4 +259,38 @@ ul:hover:hover {
     background-color: black;
 }
 
+.fa-external-link-alt{
+    color: tomato;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px black;
+}
 
+.fa-external-link-alt:hover {
+    color: royalblue;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px red;
+}
+
+.fa-calendar-alt{
+    color: #f75234;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px black;
+}
+
+.fa-calendar-alt:hover {
+    color: #f75234;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgb(182, 255, 0);
+}
+
+.fa-home {
+    color: #f75234;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px black;
+}
+
+.fa-home:hover {
+    color: #f75234;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgb(182, 255, 0);
+}
