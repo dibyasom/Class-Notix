@@ -112,6 +112,7 @@ html{
 }
 
 .card{		
+	overflow-x: auto;
 	margin: 2em auto;
 	width: 95%;
 	border: solid 1px #D3D3D3;
