@@ -156,6 +156,8 @@ html{
 .qwiklogin td{
 	padding: 0.5em 2em;
 	font-size: 1.5em;
+	
+	color: #36454F;
 }
 .fa-paperclip{
     font-size: 2em;
@@ -166,18 +168,27 @@ html{
     color: royalblue;
     font-size: 2em;
     text-shadow: 2px 2px 2px black;
+
+	margin: auto;
+	padding: 0.5em 1em;
 }
 
 .fa-github-alt {
     font-size: 2em;
     color: black;
     text-shadow: 2px 2px 2px white;
+
+	margin: auto;
+	padding: 0.5em 1em;
 }
 
 .fa-instagram {
     font-size: 2em;
     color: blueviolet;
     text-shadow: 2px 2px 2px rgb(251, 5, 141);
+
+	margin: auto;
+	padding: 0.5em 1em;
 }
 
 .fa-instagram:hover {
@@ -200,7 +211,7 @@ html{
     text-shadow: 5px 5px 0px red;
 }
 
-tr:hover {
+td:hover {
     background-color: #36454F;
 	color: #FFA500;
 }
