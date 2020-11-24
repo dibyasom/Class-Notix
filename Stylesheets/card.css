@@ -1,0 +1,248 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	height:100%;
+	width: auto;
+}
+
+/*Landscape mode*/
+@media only screen and (max-width: 1920px) {
+	.header{	
+		background: url('../Resources/bg-mobile.jpg');
+		width: 100%;
+		max-width: 1920px;
+		height: 80px;
+		
+		display: block;
+		overflow: hidden;
+		
+		margin: 0.5em 0;
+		padding: 0;
+		
+		border-radius: 15px;
+		
+		animation: fuse 5s infinite;
+		animation-direction: alternate;
+	}
+	
+	 @keyframes fuse{
+		0% {background: url('../Resources/bg-desk.jpg');}
+		100% {background: url('../Resources/bg-desk1.jpg');}
+	}
+	
+	#separator hr{
+		position: relative;
+		top: -0.2em;
+		border: 0.1em solid rgb(64, 128, 128);
+	    border-radius: 5px;
+		animation: stroll 5s infinite;
+		animation-direction: alternate;
+	}
+	
+	@keyframes stroll{
+		0%   {border: 0.15em solid #1f262e;}	
+		25%  {border: 0.15em solid #0681d6;}
+		50%  {border: 0.15em solid #649b58;}		
+		75%  {border: 0.15em solid #f49a52;}				
+		100% {border: 0.15em solid #FFA500;}			
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	.header{	
+		background: url('../Resources/bg-mobile.jpg');
+		width: 100%;
+		max-width: 1080px;
+		height: 80px;
+		
+		display: block;
+		overflow: hidden;
+		
+		margin: 0.5em 0;
+		padding: 0;
+		
+		border-radius: 15px;
+		
+		animation: fuse 5s infinite;
+		animation-direction: alternate;
+	}
+	
+	 @keyframes fuse{
+		0% {background: url('../Resources/bg-mobile.jpg');}
+		100% {background: url('../Resources/bg-mobile1.jpg');}
+	}
+
+	#separator hr{
+		border: 0.1em solid rgb(64, 128, 128);
+	    border-radius: 5px;
+		animation: stroll 5s infinite;
+		animation-direction: alternate;
+	}
+	
+	@keyframes stroll{
+		0%   {border: 0.15em solid #1f262e;}	
+		25%  {border: 0.15em solid #0681d6;}
+		50%  {border: 0.15em solid #649b58;}		
+		75%  {border: 0.15em solid #f49a52;}				
+		100% {border: 0.15em solid #FFA500;}				
+	}
+}
+
+	
+html{
+	background: #D3D3D3;
+	width: 100%;
+	height: auto;
+}
+
+.head{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	
+	background: #D3D3D3;
+	width: 100%;
+	height: auto;
+	
+	margin: 0;
+	padding: 0;
+	border-radius: 30px;
+}
+
+.card{		
+	margin: 2em auto;
+	width: 95%;
+	border: solid 1px #D3D3D3;
+	border-left: 6px solid seagreen;
+	padding: 1em;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.7);
+	
+	background:#f9f5ec;
+	text-align: center;
+	font-family: "Amarante";
+	
+	animation: blend 5s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blend{
+	0%   {border-left: 6px solid #1f262e;}	
+	25%  {border-left: 6px solid #0681d6;}
+	50%  {border-left: 6px solid #649b58;}		
+	75%  {border-left: 6px solid #f49a52;}				
+	100% {border-left: 6px solid #FFA500;}	
+}
+
+.card h2{
+	font-size: 2em;
+	color: rgb(64, 100, 128);	
+}
+
+.card p{
+	font-size: 1.5em;
+}
+
+.card h2::before{
+	content: "F";
+	
+	font-family: "Amarante";
+	color: tomato;
+	font-size: 1.5em;
+}
+
+.qwiklogin td{
+	padding: 0.5em 2em;
+	font-size: 1.5em;
+}
+.fa-paperclip{
+    font-size: 2em;
+    color: tomato;
+}
+
+.fa-linkedin {
+    color: royalblue;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+}
+
+.fa-github-alt {
+    font-size: 2em;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.fa-instagram {
+    font-size: 2em;
+    color: blueviolet;
+    text-shadow: 2px 2px 2px rgb(251, 5, 141);
+}
+
+.fa-instagram:hover {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px red;
+}
+
+.fa-linkedin:hover {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px red;
+}
+
+.fa-github-alt:hover {
+    font-size: 1.5em;
+    text-shadow: 3px 3px 3px red;
+}
+
+.fa-paperclip:hover {
+    font-size: 1.5em;
+    text-shadow: 5px 5px 0px red;
+}
+
+tr:hover {
+    background-color: #36454F;
+	color: #FFA500;
+}
+
+ul:hover:hover {
+    background-color: #36454F;
+	color: #FFA500;
+	
+}
+
+.fa-external-link-alt{
+    color: tomato;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px black;
+}
+
+.fa-external-link-alt:hover {
+    color: royalblue;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px red;
+}
+
+.fa-calendar-alt{
+    color: #f75234;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px black;
+}
+
+.fa-calendar-alt:hover {
+    color: #f75234;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgb(182, 255, 0);
+}
+
+.fa-home {
+    color: #f75234;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px black;
+}
+
+.fa-home:hover {
+    color: #f75234;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgb(182, 255, 0);
+}
