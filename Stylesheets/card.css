@@ -13,7 +13,7 @@ body {
     background: url("../Resources/bg-mobile.jpg");
     width: 100%;
     max-width: 1920px;
-    height: 30px;
+    height: 40px;
 
     display: block;
     overflow: hidden;
@@ -69,7 +69,7 @@ body {
     background: url("../Resources/bg-mobile.jpg");
     width: 100%;
     max-width: 1080px;
-    height: 80px;
+    height: 40px;
 
     display: block;
     overflow: hidden;
@@ -142,52 +142,27 @@ html {
   overflow-x: auto;
   margin: 2em auto;
   width: 95%;
-  border: solid 1px #d3d3d3;
+  border: solid 1px #2e2e2e;
   border-left: 6px solid seagreen;
   padding: 1em;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.7);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
-  background: #10053e;
+  background: #2e2e2e;
+  color: #898989;
+  font-size: large;
   text-align: center;
   font-family: "Amarante";
 
-  animation: blend 5s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blend {
-  0% {
-    border-left: 6px solid #1f262e;
-  }
-  25% {
-    border-left: 6px solid #0681d6;
-  }
-  50% {
-    border-left: 6px solid #649b58;
-  }
-  75% {
-    border-left: 6px solid #f49a52;
-  }
-  100% {
-    border-left: 6px solid #ffa500;
-  }
+  border-left: 6px solid #d67b60;
 }
 
 .card h2 {
   font-size: 2em;
-  color: rgb(64, 100, 128);
+  color: #d67b60;
 }
 
 .card p {
-  font-size: 1.5em;
-}
-
-.card h2::before {
-  content: "F";
-
-  font-family: "Amarante";
-  color: tomato;
   font-size: 1.5em;
 }
 
@@ -195,7 +170,7 @@ td {
   padding: 0.5em 2em;
   font-size: 1em;
 
-  color: #36454f;
+  color: #e9e9e6;
 }
 .fa-paperclip {
   font-size: 2em;
