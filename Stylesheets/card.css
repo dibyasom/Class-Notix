@@ -141,16 +141,23 @@ html {
 .card {
   overflow-x: auto;
   margin: 2em auto;
+
   width: 95%;
+
   border: solid 1px #2e2e2e;
   border-left: 6px solid seagreen;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
   background: #2e2e2e;
   color: #898989;
-  font-size: large;
+  font-size: larger;
   text-align: center;
   font-family: "Amarante";
 
@@ -172,6 +179,7 @@ td {
 
   color: #e9e9e6;
 }
+
 .fa-paperclip {
   font-size: 2em;
   color: tomato;
