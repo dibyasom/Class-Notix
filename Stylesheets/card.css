@@ -21,7 +21,7 @@ body {
     margin: 0.5em 0;
     padding: 0;
 
-    border-radius: 15px;
+    border-radius: 10px;
 
     animation: fuse 5s infinite;
     animation-direction: alternate;
@@ -119,7 +119,7 @@ body {
 }
 
 html {
-  background: #d3d3d3;
+  background: #F7882F;
   width: 100%;
   height: auto;
 }
@@ -129,7 +129,6 @@ html {
   position: sticky;
   top: 0;
 
-  background: #d3d3d3;
   width: 100%;
   height: auto;
 
@@ -155,18 +154,18 @@ html {
   justify-content: center;
   align-items: stretch;
 
-  background: #2e2e2e;
-  color: #898989;
+  background: #DCC7AA;
+  color: #273c5a;
   font-size: larger;
   text-align: center;
-  font-family: "Amarante";
+  font-family: "Courgette";
 
-  border-left: 6px solid #d67b60;
+  border-left: 6px solid #6B7A8;
 }
 
 .card h2 {
   font-size: 2em;
-  color: #d67b60;
+  color: #2e1616;
 }
 
 .card p {
@@ -177,12 +176,12 @@ td {
   padding: 0.5em 2em;
   font-size: 1em;
 
-  color: #e9e9e6;
+  color: #1b1d24;
 }
 
 .fa-paperclip {
   font-size: 2em;
-  color: tomato;
+  color: rgb(218, 144, 131);
 }
 
 .fa-linkedin {
