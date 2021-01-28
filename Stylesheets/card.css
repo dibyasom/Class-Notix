@@ -7,121 +7,54 @@ body {
   width: auto;
 }
 
-/*Landscape mode*/
-@media only screen and (max-width: 1920px) {
-  .header {
-    background: url("../Resources/bg-mobile.jpg");
-    width: 100%;
-    max-width: 1920px;
-    height: 40px;
-
-    display: block;
-    overflow: hidden;
-
-    margin: 0.5em 0;
-    padding: 0;
-
-    border-radius: 10px;
-
-    animation: fuse 5s infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes fuse {
-    0% {
-      background: url("../Resources/bg-desk.jpg");
-    }
-    100% {
-      background: url("../Resources/bg-desk1.jpg");
-    }
-  }
-
-  #separator hr {
+/*Portrait mode*/
+@media only screen and (max-width: 1080px) {
+  .intro {
     position: relative;
-    top: -0.2em;
-    border: 0.1em solid rgb(64, 128, 128);
-    border-radius: 5px;
-    animation: stroll 5s infinite;
-    animation-direction: alternate;
+    top: -15px;
+    right: -50px;
   }
-
-  @keyframes stroll {
-    0% {
-      border: 0.15em solid #1f262e;
-    }
-    25% {
-      border: 0.15em solid #0681d6;
-    }
-    50% {
-      border: 0.15em solid #649b58;
-    }
-    75% {
-      border: 0.15em solid #f49a52;
-    }
-    100% {
-      border: 0.15em solid #ffa500;
-    }
+  hr {
+    position: relative;
+    top: 30px;
+    height: 70%;
+    margin: 0 0px 0 50px;
   }
 }
 
-@media only screen and (max-width: 1080px) {
-  .header {
-    background: url("../Resources/bg-mobile.jpg");
-    width: 100%;
-    max-width: 1080px;
-    height: 40px;
-
-    display: block;
-    overflow: hidden;
-
-    margin: 0.5em 0;
-    padding: 0;
-
-    border-radius: 15px;
-
-    animation: fuse 5s infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes fuse {
-    0% {
-      background: url("../Resources/bg-mobile.jpg");
-    }
-    100% {
-      background: url("../Resources/bg-mobile1.jpg");
-    }
-  }
-
-  #separator hr {
-    border: 0.1em solid rgb(64, 128, 128);
-    border-radius: 5px;
-    animation: stroll 5s infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes stroll {
-    0% {
-      border: 0.15em solid #1f262e;
-    }
-    25% {
-      border: 0.15em solid #0681d6;
-    }
-    50% {
-      border: 0.15em solid #649b58;
-    }
-    75% {
-      border: 0.15em solid #f49a52;
-    }
-    100% {
-      border: 0.15em solid #ffa500;
-    }
+@media only screen and (min-width: 1081px) {
+  hr {
+    position: relative;
+    top: 15px;
+    height: 70%;
+    margin: 0 0px 0 50px;
   }
 }
 
 html {
-  background: #F7882F;
+  background: #f7882f;
   width: 100%;
   height: auto;
+}
+
+.header {
+  background: url("../Resources/bgL.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  width: 100%;
+  max-width: 1920px;
+  height: 100px;
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 10px;
+  box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.8);
 }
 
 .head {
@@ -130,11 +63,34 @@ html {
   top: 0;
 
   width: 100%;
-  height: auto;
+  height: 100%;
 
   margin: 0;
   padding: 0;
   border-radius: 30px;
+}
+
+.readMe {
+  display: flex;
+  justify-content: center;
+  /* vertical-align: center; */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  height: 100px;
+  padding: 0;
+  text-align: center;
 }
 
 .card {
@@ -143,7 +99,6 @@ html {
 
   width: 95%;
 
-  border: solid 1px #2e2e2e;
   border-left: 6px solid seagreen;
   padding: 0.5em;
   border-radius: 10px;
@@ -154,22 +109,21 @@ html {
   justify-content: center;
   align-items: stretch;
 
-  background: #DCC7AA;
+  background: #dcc7aa;
   color: #273c5a;
   font-size: larger;
   text-align: center;
   font-family: "Courgette";
-
-  border-left: 6px solid #6B7A8;
 }
-
+#player {
+  width: 100px;
+}
 .card h2 {
   font-size: 2em;
   color: #2e1616;
 }
 
 .card p {
-  font-size: 1.5em;
 }
 
 td {
@@ -212,22 +166,18 @@ td {
 }
 
 .fa-instagram:hover {
-  font-size: 1.5em;
-  text-shadow: 3px 3px 3px red;
+  text-shadow: 3px 3px 3px white;
 }
 
 .fa-linkedin:hover {
-  font-size: 1.5em;
-  text-shadow: 3px 3px 3px red;
+  text-shadow: 3px 3px 3px white;
 }
 
 .fa-github-alt:hover {
-  font-size: 1.5em;
-  text-shadow: 3px 3px 3px red;
+  text-shadow: 3px 3px 3px white;
 }
 
 .fa-paperclip:hover {
-  font-size: 1.5em;
   text-shadow: 5px 5px 0px red;
 }
 
@@ -243,36 +193,33 @@ ul:hover:hover {
 
 .fa-external-link-alt {
   color: tomato;
-  font-size: 1.5em;
+  font-size: 2em;
   text-shadow: 2px 2px 0px black;
 }
 
 .fa-external-link-alt:hover {
   color: royalblue;
-  font-size: 2em;
   text-shadow: 2px 2px 0px red;
 }
 
 .fa-calendar-alt {
   color: #f75234;
-  font-size: 1.5em;
+  font-size: 2em;
   text-shadow: 2px 2px 0px black;
 }
 
 .fa-calendar-alt:hover {
   color: #f75234;
-  font-size: 2em;
   text-shadow: 2px 2px 0px rgb(182, 255, 0);
 }
 
 .fa-home {
   color: #f75234;
-  font-size: 1.5em;
+  font-size: 2em;
   text-shadow: 2px 2px 0px black;
 }
 
 .fa-home:hover {
   color: #f75234;
-  font-size: 2em;
   text-shadow: 2px 2px 0px rgb(182, 255, 0);
 }
